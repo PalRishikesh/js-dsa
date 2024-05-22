@@ -41,4 +41,4 @@ function fibonacciFun(n){
     return fib;
 }
 
-console.log(fibonacciFun(5))
+console.log(fibonacciFun(10))
