@@ -3,16 +3,17 @@
  They are used in various applications such as searching, merging, and sorting data.
 
 ### Selection Sort
-- Finds the minimum (or maximum) element and swaps it with the first (or last) element, then repeats.
+- Finds the minimum (or maximum) element (select) and swaps it with the first (or last) element, then repeats.
 - Divides the input list into two parts: the sorted part (first value) at the beginning and the unsorted part. Repeatedly selects the smallest (or largest) element from the unsorted part (from other array list) and moves it to the end of the sorted part.
  - Use Cases
-    - Suitable for small datasets.
+    - Suitable for small datasets (small array).
     - Used when memory space is limited since it only requires a constant amount of additional memory.
   - Time complexity:
     -     O(n^2) in the worst case, O(n) in the best case.
 
 ### Bubble Sort
 - Compares adjacent elements and swaps them if they are in the wrong order. Repeats this process until the list is sorted.
+- In current round, current largest element will come on top or at end (Eg. In first round, first largest lement will come at end)
  - Use Cases
     - Simple and easy to understand, making it suitable for educational purposes.
     - Inefficient for large datasets but can be useful for small or nearly sorted arrays memory.
@@ -21,6 +22,7 @@
 
 ### Insertion Sort
 - Builds the final sorted array one item at a time. It picks the next element and inserts it into its correct position in the already sorted part.
+- Using shift array method
 - Use Cases
     - Efficient for small datasets or lists that are already partially sorted.
     - Often used as a subroutine in more complex algorithms (e.g., TimSort).
