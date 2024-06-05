@@ -51,7 +51,7 @@ Temporal Dead Zone
 
 ### Scope & Scope Chain
 
-Scope determines the accessibility of variables (objects and functions) from different parts of the code.\
+Scope determines the accessibility of variables (objects,etc) from different parts of the code.\
 3 Types are:
 
 - Global Scope (Window, Global)
