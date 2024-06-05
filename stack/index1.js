@@ -43,17 +43,17 @@ class Stack{
 }
 
 
-let myStack = new Stack(5)
+// let myStack = new Stack(5)
 
-myStack.push(1)
-myStack.push(2)
-myStack.push(3)
-myStack.push(3)
-myStack.push(4)
+// myStack.push(1)
+// myStack.push(2)
+// myStack.push(3)
+// myStack.push(3)
+// myStack.push(4)
 
-console.log(myStack.display());
-myStack.pop();
-console.log(myStack.display());
+// console.log(myStack.display());
+// myStack.pop();
+// console.log(myStack.display());
 
 // let string = "Rishikesh";
 // let strStack = new Stack(50);
@@ -61,7 +61,31 @@ console.log(myStack.display());
 // let stringList = string.split("");
 
 // strStack.reverse(stringList)
-// console.log(stringList);
+// let reverseValue = "";
+// for (let index = 0; index < stringList.length; index++) {
+//     reverseValue += stringList[index];
+// }
+// console.log(reverseValue);
+
+
+/** Revere a world */
+let words = " 3c      2zPeO dpIMVv2SG    1AM       o       VnUhxK a5YKNyuG     x9    EQ  ruJO       0Dtb8qG91w 1rT3zH F0m n G wU";
+words = words.split(" ");
+// console.log(words);
+let wordStack = new Stack(500);
+ wordStack.reverse(words);
+
+
+let reverseValue = "";
+for (let index = 0; index < words.length; index++) {
+    if(words[index] != ""){
+        reverseValue +=" "+words[index];
+    }
+    
+}
+
+console.log(reverseValue);
+
 
 
 
