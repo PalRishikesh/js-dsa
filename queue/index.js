@@ -30,6 +30,7 @@ class Queue{
         return this.queue.length === 0
     }
 
+    //front/peek
     peek(){
         if(this.isEmpty()){
             return "Queue is empty";
