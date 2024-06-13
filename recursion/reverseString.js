@@ -17,7 +17,7 @@ function reverseStringRecurisve(string){
         return string;
     }   
 
-    
+
     
     let newSubString = string.substring(0, string.length - 1);
     let revesePart = reverseStringRecurisve(newSubString)
@@ -30,6 +30,12 @@ function reverseStringRecurisve(string){
     // let result  = string[string.length-1] + revesePart;
     // return result;
 
+    /** String will have
+     * hell
+     * hel
+     * he
+     * h
+     */
     let returnResult = string[string.length - 1] + revesePart
     return returnResult;
 }
