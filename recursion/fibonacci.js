@@ -13,7 +13,7 @@ function fibonacci(value){
     return n0;
 }
 
-// console.log(fibonacci(6));
+console.log(fibonacci(5));
 
 function recursiveFibonacci(value){
     if(value <= 1){
