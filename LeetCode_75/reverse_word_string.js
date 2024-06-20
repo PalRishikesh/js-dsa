@@ -17,4 +17,34 @@ var reverseWords = function(s) {
 }
 
 
-console.log(reverseWords(string));
+// console.log(reverseWords(string));
+
+
+var reverseWordsNew = function(s) {
+    let result = [];
+    let length = s.length;
+
+    let word= "";
+    for (let index = 0; index < length; index++) {
+        if(s[index] != " "){
+            console.log(s[index]);
+            word +=s[index];
+        }
+        else if(word.length > 0){
+            result.unshift(word);
+            word="";
+        }
+        
+    }
+    if(word.length > 0){
+        result.unshift(word);
+    }
+    console.log(result);
+    return result.join(" ");
+}
+
+
+
+
+
+console.log(reverseWordsNew(string));

@@ -51,3 +51,30 @@ const nums = [1, 2, 3, 4];
 // console.log(secondMethod(nums));
 
 
+var productExceptSelf = function (nums) {
+    let length = nums.length;
+    let left = new Array(length).fill(1);
+    let right = new Array(length).fill(1);
+    
+    let answer = new Array(length);
+
+    // Left side
+    for(let i=1;i < length; i++){
+        left[i] = left[i-1] * nums[i-1];
+    }
+
+    // Right Side
+    for(let i = length - 2; i >=0; i--){
+        right[i] = right[i+1] * nums[i+1];
+    }
+    console.log(left);
+    console.log(right);
+    
+    // Merge7
+    for(let i=0; i<length; i++){
+        answer[i] = left[i] * right[i];
+    }
+    return answer;
+}
+
+console.log(productExceptSelf(nums));
