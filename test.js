@@ -72,3 +72,20 @@ function reverserChar(input){
  * Find first tablle data is not present in second tables -> SELECT first_name, last_name
 FROM Customers LEFT JOIN orders ON orders.customer_id == Customers.customer_id where orders.customer_id is NULL;
  */
+
+
+
+
+
+const life = false;
+const motivation = ()=>{
+    const randomNumber = Math.floor(Math.random() * 10);
+    if(randomNumber <= 5) return true;
+    return false;
+}
+while(life){
+    let areYouMotivated = motivation()
+    if(areYouMotivated) console.log("Well done Keep it up & Enjoy Life !");
+    else areYouMotivated = true;
+    if(areYouMotivated) console.log("Write Nice Code & Enjoy Life !");
+}

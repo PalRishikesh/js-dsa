@@ -36,3 +36,8 @@ var decodeString = function(s) {
     }
     return currentStr;
 };
+
+
+
+
+const life = true;
