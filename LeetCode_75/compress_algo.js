@@ -30,6 +30,6 @@ var compress = function(chars) {
 };
 
 
-let num= ["a","b","b","b","b","b","b","b","b","b","b","b","b"];
+let num= ["a","a","b","b","b","b","b","b","b","b","b","b","b","b"];
 
 console.log(compress(num))

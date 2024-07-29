@@ -1,4 +1,4 @@
-const nums = [1, 2, 3, 4];
+
 
 // function allProduct(arr){
 //     let productArray = [];
@@ -9,6 +9,7 @@ const nums = [1, 2, 3, 4];
 //     }
 //     return productArray;
 // }
+// const nums = [1, 2, 3, 4];
 
 // console.log(allProduct(nums));
 
@@ -50,6 +51,7 @@ const nums = [1, 2, 3, 4];
 
 // console.log(secondMethod(nums));
 
+/*
 
 var productExceptSelf = function (nums) {
     let length = nums.length;
@@ -76,5 +78,54 @@ var productExceptSelf = function (nums) {
     }
     return answer;
 }
+    */
 
-console.log(productExceptSelf(nums));
+// console.log(productExceptSelf(nums));
+
+
+
+
+
+
+
+// Input: nums = [1,2,3,4]
+// Output: [24,12,8,6]
+
+
+
+var productExceptSelf = function (nums) {
+    // Baisc approach, will not work for zero value
+    
+    // let productOfAll = 1;
+    // let expectedArray=[];
+    // for (const singleValue of nums) {
+    //         productOfAll *= singleValue;
+    // }
+    // console.log(productOfAll);
+    // for (const singleValue of nums) {
+    //     expectedArray.push(productOfAll/singleValue);
+    // }
+    // console.log(expectedArray);
+
+
+    let returnArry = [];
+    let leftArray = new Array(nums.length).fill(1);
+    let rightArray = new Array(nums.length).fill(1);
+
+    for (let index = 0; index < nums.length-1; index++) {
+        leftArray[index+1] = (leftArray[index] * nums[index]);
+    }
+    for (let index = nums.length-1; index > 0; index--) {
+        rightArray[index-1] = (rightArray[index] * nums[index])
+    }
+
+    for (let index = 0; index < nums.length; index++) {
+        returnArry[index] = (leftArray[index] * rightArray[index]);
+    }
+
+    return returnArry
+
+}
+
+
+console.log(productExceptSelf([-1,1,0,-3,3]));

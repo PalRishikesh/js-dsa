@@ -30,6 +30,23 @@ var maxProfit = function (prices) {
     return maxProfileValue;
 }
 
-let arr = [7,1,5,3,6,4];
+let arr = [7,1,5,3,6,4,0,8];
 
-console.log(maxProfit(arr));
+// console.log(maxProfit(arr));
+
+
+
+var maxProfitSimple = function (prices) {
+    let currMin = prices[0];
+    let currMax = 0;
+    for (let index = 0; index < prices.length; index++) {
+        currMin = Math.min(prices[index], currMin);
+        let profit =  prices[index] - currMin;
+        // console.log(prices[index], currMin,profit);
+        currMax = Math.max(currMax, profit)
+        
+    }
+    return currMax;
+}
+
+console.log(maxProfitSimple(arr));
