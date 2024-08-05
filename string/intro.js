@@ -59,3 +59,32 @@ console.log(string3.substring(7,15)); //  another, end number is omited
 console.log(string3.substring(7,-1)); // return the previous value ie: This is
 
 console.log(string2.slice(-15,-1));
+
+// Converting
+
+const toBeConverted = 1; // true, null, undefined
+console.log(String(toBeConverted));
+
+const toConvert = {name:"Rishi"}
+console.log(String(toConvert)); //[object Object], to convert object need to use JSON.stringify
+console.log(JSON.stringify(toConvert));
+
+console.log(string3.toUpperCase());
+console.log(string3.toLowerCase())
+
+// Find the ASCII values
+console.log(string3.charCodeAt(0));
+// To convert to string
+console.log(String.fromCharCode(84));
+
+const str1 = "Apple";
+const str2 = "apple";
+
+console.log(str1.localeCompare(str2)); // 1 here str1 is greater by captial A
+console.log(str1.includes("le")); // true
+
+// Split and Joing
+console.log(string3.split(" "));
+
+const arr =["apple","Banana"];
+console.log(arr.join(" and  "));
