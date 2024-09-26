@@ -1,15 +1,15 @@
 
 
-// function allProduct(arr){
-//     let productArray = [];
-//     let singleProduct = 1;
-//     for (let index = 0; index < arr.length; index++) {
-//        singleProduct = singleProduct * arr[index];
-//        productArray.push(singleProduct);
-//     }
-//     return productArray;
-// }
-// const nums = [1, 2, 3, 4];
+function allProduct(arr){
+    let productArray = [];
+    let singleProduct = 1;
+    for (let index = 0; index < arr.length; index++) {
+       singleProduct = singleProduct * arr[index];
+       productArray.push(singleProduct);
+    }
+    return productArray;
+}
+const nums = [1, 2, 3, 4];
 
 // console.log(allProduct(nums));
 
@@ -115,9 +115,12 @@ var productExceptSelf = function (nums) {
     for (let index = 0; index < nums.length-1; index++) {
         leftArray[index+1] = (leftArray[index] * nums[index]);
     }
+    console.log(leftArray);
+    
     for (let index = nums.length-1; index > 0; index--) {
         rightArray[index-1] = (rightArray[index] * nums[index])
     }
+    console.log(rightArray);
 
     for (let index = 0; index < nums.length; index++) {
         returnArry[index] = (leftArray[index] * rightArray[index]);
@@ -128,4 +131,4 @@ var productExceptSelf = function (nums) {
 }
 
 
-console.log(productExceptSelf([-1,1,0,-3,3]));
+// console.log(productExceptSelf([-1,1,0,-3,3]));

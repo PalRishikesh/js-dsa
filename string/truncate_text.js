@@ -10,4 +10,4 @@ function truncate(str,maxLength){
 
 let str1="Hi,sir how are you doing now";
 let str2 = "Good";
-console.log(truncate(str2, 13));
+console.log(truncate(str1, 13));
