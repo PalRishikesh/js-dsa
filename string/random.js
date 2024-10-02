@@ -455,6 +455,7 @@ function circularRepeat(s, n) {
     const newStr = s.repeat(n);
    return  newStr.length > 100 ?  newStr.substring(0, 100)  :  newStr
   }
+console.log(circularRepeat("abcd",5));
 
 
 //   Given is an array numbers with different numbers. Return an array in which the first entry is swapped with the last. The rest remains unchanged.

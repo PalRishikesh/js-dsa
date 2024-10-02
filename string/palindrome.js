@@ -10,7 +10,6 @@ function isPalindrome(x){
 // ignoring spaces, punctuation, and capitalization
 
 function isPalindromeString(str){
-    console.log(str)
     // Remove non-alphanumeric characters and convert to lowercase
     const clearString = str.replace(/[^a-zA-Z0-9]/g,'').toLowerCase();
     const reverseString =  clearString.split("").reverse().join("");
@@ -19,7 +18,7 @@ function isPalindromeString(str){
 }
 
 const input = "A man, a plan, a canal, .Panama";
-// console.log(isPalindromeString(input));
+console.log(isPalindromeString(input));
 
 
 

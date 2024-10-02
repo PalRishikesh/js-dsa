@@ -14,7 +14,7 @@ function hammingDistance(x,y){
 
     for (let index = 0; index < x.length; index++) {
         if(x[index] != y[index]){
-            // distance++;
+            distance++;
         }
     }
     return distance;
@@ -22,8 +22,6 @@ function hammingDistance(x,y){
 // console.log(hammingDistance("Hello","Heloi"));
 
 // 2nd Variation with bits return 
-
-
 function hammingDistanceBit(x,y){
     // Get the bit by using toString(2) method
     x = x.toString(2)
@@ -51,4 +49,4 @@ function hammingDistanceBit(x,y){
     return distance;
 }
 
-console.log(hammingDistanceBit(9,5));
+// console.log(hammingDistanceBit(9,5));
