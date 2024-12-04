@@ -3,19 +3,19 @@ function promiseFn(milliSecond){
     return new Promise((resolve, reject)=>{
 
         if(false){
-            reject("error");
+            return reject("error");
         }
-        else{
-           setTimeout(() => {
+        // else{
+           return setTimeout(() => {
             return resolve("Success")
            }, milliSecond);
-        }
+        // }
     })
    
 }
 
 async function testPromise(){
-    const data = await promiseFn(2000)
+    const data = await promiseFn(4000)
     console.log(data);
 }
 testPromise()
@@ -77,15 +77,15 @@ FROM Customers LEFT JOIN orders ON orders.customer_id == Customers.customer_id w
 
 
 
-const life = false;
-const motivation = ()=>{
-    const randomNumber = Math.floor(Math.random() * 10);
-    if(randomNumber <= 5) return true;
-    return false;
-}
-while(life){
-    let areYouMotivated = motivation()
-    if(areYouMotivated) console.log("Well done Keep it up & Enjoy Life !");
-    else areYouMotivated = true;
-    if(areYouMotivated) console.log("Write Nice Code & Enjoy Life !");
-}
+// const life = false;
+// const motivation = ()=>{
+//     const randomNumber = Math.floor(Math.random() * 10);
+//     if(randomNumber <= 5) return true;
+//     return false;
+// }
+// while(life){
+//     let areYouMotivated = motivation()
+//     if(areYouMotivated) console.log("Well done Keep it up & Enjoy Life !");
+//     else areYouMotivated = true;
+//     if(areYouMotivated) console.log("Write Nice Code & Enjoy Life !");
+// }

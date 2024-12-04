@@ -30,7 +30,7 @@ var maxProfit = function (prices) {
     return maxProfileValue;
 }
 
-let arr = [7,1,5,3,6,4,0,8];
+let arr = [7,6,4,3,1]
 
 // console.log(maxProfit(arr));
 
@@ -48,5 +48,5 @@ var maxProfitSimple = function (prices) {
     }
     return currMax;
 }
-
+    
 console.log(maxProfitSimple(arr));
